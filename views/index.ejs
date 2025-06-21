@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CIEFAL - Cambridge Institute of English For Advanced Learning</title>
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <%- include('partials/header') %>
+    <section
+      class="hero d-flex align-items-center justify-content-center text-center text-white"
+      style="
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url('https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=1500&q=80')
+            center/cover no-repeat;
+        min-height: 60vh;
+      "
+    >
+      <div class="container">
+        <h1 class="display-4 fw-bold mb-3">Welcome to CIEFAL</h1>
+        <p class="lead mb-4">
+          Your trusted institute for Spoken English learning.<br />Unlock your
+          potential with expert-led courses and a vibrant community.
+        </p>
+        <a href="/courses" class="btn btn-lg btn-primary px-5 py-2"
+          >Explore Courses</a
+        >
+      </div>
+    </section>
+    <section
+      class="container features position-relative"
+      style="margin-top: -50px; z-index: 2"
+    >
+      <div class="row justify-content-center g-4">
+        <div class="col-md-4">
+          <div class="card p-4 h-100 text-center border-0 rounded-4 shadow-sm">
+            <div class="mb-3">
+              <i class="bi bi-people display-5 text-primary"></i>
+            </div>
+            <h5 class="fw-bold mb-2">Expert Instructors</h5>
+            <p>
+              Learn from certified professionals with years of teaching
+              experience.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-4 h-100 text-center border-0 rounded-4 shadow-sm">
+            <div class="mb-3">
+              <i class="bi bi-chat-dots display-5 text-primary"></i>
+            </div>
+            <h5 class="fw-bold mb-2">Interactive Classes</h5>
+            <p>
+              Engage in dynamic sessions designed to boost your confidence and
+              fluency.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-4 h-100 text-center border-0 rounded-4 shadow-sm">
+            <div class="mb-3">
+              <i class="bi bi-award display-5 text-primary"></i>
+            </div>
+            <h5 class="fw-bold mb-2">Recognized Certification</h5>
+            <p>
+              Earn certificates that add value to your academic and professional
+              journey.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <%- include('partials/footer') %>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+  </body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "ciefal",
+  "version": "1.0.0",
+  "description": "The official CIEFAL website - https://ciefal.com",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "ainul-haque",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.7",
+    "dotenv": "^16.5.0",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "google-spreadsheet": "^4.1.4",
+    "nodemailer": "^7.0.3"
+  }
+}
