@@ -36,7 +36,7 @@ This website helps make the institute **visible online**, showcase its **courses
 | Frontend | HTML, EJS, Bootstrap 5                 |
 | Backend  | Node.js, Express.js                    |
 | Database | Google Sheets (via API)                |
-| Hosting  | Render / GitHub Pages (frontend only)  |
+| Hosting  | Render                                 |
 | Forms    | Handled by Express + Google Sheets API |
 
 ---

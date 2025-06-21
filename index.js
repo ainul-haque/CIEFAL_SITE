@@ -25,6 +25,11 @@ const formRoutes = require("./src/routes/formRoutes");
 app.use("/", pageRoutes);
 app.use("/submit-form", formRoutes);
 
+// 404 Error Page route
+app.use((req, res) => {
+  res.status(404).render("404", { title: "404 | Page Not Found" });
+});
+
 // Start the Server
 app.listen(PORT, () => {
   console.log(`🚀 Server is running on http://localhost:${PORT}`);
