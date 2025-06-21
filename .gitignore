@@ -70,7 +70,7 @@ dist
 
 # Gatsby files
 .cache/
-public
+
 
 # Storybook build outputs
 .out
@@ -114,7 +114,7 @@ logs/
 
 # Upload directories (if handling file uploads)
 uploads/
-public/uploads/
+
 
 # SSL certificates (if using local HTTPS)
 *.pem
