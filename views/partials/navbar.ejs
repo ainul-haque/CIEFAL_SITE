@@ -1,29 +1,59 @@
-<nav class="navbar navbar-light bg-white shadow-sm py-3 custom-navbar">
-  <div class="container position-relative">
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-2">  
+  <div class="container-fluid px-3 px-md-4">    
     <a class="navbar-brand d-flex align-items-center" href="/">
-      <img src="/images/Logo.png" alt="CIEFAL Logo" width="40" height="40" class="me-2" />
+      <img src="/images/Logo.png" alt="CIEFAL Logo" width="36" height="36" class="me-2" />
       <span class="fw-bold">CIEFAL</span>
     </a>
-    <button class="custom-navbar-toggler d-lg-none" type="button" aria-label="Toggle navigation">
-      <span class="custom-navbar-toggler-icon"></span>
+    <button class="mobile-menu-toggle d-lg-none" type="button" aria-label="Toggle navigation">
+      <span class="toggle-icon"></span>
     </button>
-    <div class="custom-navbar-menu d-none d-lg-flex align-items-center ms-auto">
-      <a class="nav-link" href="/">Home</a>
-      <a class="nav-link" href="/about">About</a>
-      <a class="nav-link" href="/courses">Courses</a>
-      <a class="nav-link" href="/admission">Admission</a>
-      <a class="nav-link" href="/contact">Contact</a>
-    </div>
-    <!-- Mobile menu overlay -->
-    <div class="custom-navbar-overlay"></div>
-    <div class="custom-navbar-mobile-menu">
-      <button class="custom-navbar-close" aria-label="Close menu">&times;</button>
-      <a class="nav-link" href="/">Home</a>
-      <a class="nav-link" href="/about">About</a>
-      <a class="nav-link" href="/courses">Courses</a>
-      <a class="nav-link" href="/admission">Admission</a>
-      <a class="nav-link" href="/contact">Contact</a>
+    <div class="collapse navbar-collapse d-none d-lg-flex" id="desktopNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/courses">Courses</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/admission">Admission</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+      </ul>
     </div>
   </div>
 </nav>
+
+<!-- Mobile Menu Overlay -->
+<div class="mobile-menu-overlay"></div>
+<div class="mobile-menu">
+  <div class="mobile-menu-header">
+    <button class="mobile-menu-close" aria-label="Close menu">&times;</button>
+  </div>
+  <div class="mobile-menu-body">
+    <ul class="mobile-nav">
+      <li class="mobile-nav-item">
+        <a class="mobile-nav-link" href="/">Home</a>
+      </li>
+      <li class="mobile-nav-item">
+        <a class="mobile-nav-link" href="/courses">Courses</a>
+      </li>
+      <li class="mobile-nav-item">
+        <a class="mobile-nav-link" href="/admission">Admission</a>
+      </li>
+      <li class="mobile-nav-item">
+        <a class="mobile-nav-link" href="/contact">Contact</a>
+      </li>
+      <li class="mobile-nav-item">
+        <a class="mobile-nav-link" href="/about">About</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
 <script src="/js/navbar.js"></script>
