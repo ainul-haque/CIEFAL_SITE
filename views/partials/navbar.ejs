@@ -66,6 +66,20 @@
 </div>
 
 <script src="/js/navbar.js"></script>
+<script>
+  // Responsive fix: close mobile menu if resizing to desktop
+  window.addEventListener('resize', function () {
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const mobileMenuOverlay = document.querySelector('.mobile-menu-overlay');
+    if (window.innerWidth >= 992) {
+      if (menuToggle) menuToggle.classList.remove('active');
+      if (mobileMenu) mobileMenu.classList.remove('active');
+      if (mobileMenuOverlay) mobileMenuOverlay.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  });
+</script>
 
 <style>
   nav.navbar {
@@ -113,5 +127,34 @@
   .ciefal-full-form:hover {
     box-shadow: 0 4px 16px rgba(13, 110, 253, 0.15);
     background: linear-gradient(135deg, #e6f0fd 60%, #f0f7ff 100%);
+  }
+
+  .mobile-menu,
+  .mobile-menu-overlay {
+    display: none;
+  }
+
+  .mobile-menu {
+    width: 75vw;
+    min-width: 220px;
+    max-width: 340px;
+  }
+
+  /* Mobile menu positioning and visibility for mobile devices */
+  @media (max-width: 991.98px) {
+
+    .mobile-menu,
+    .mobile-menu-overlay {
+      display: block;
+    }
+
+    .mobile-menu {
+      right: -75vw;
+      left: auto;
+    }
+
+    .mobile-menu.active {
+      right: 0;
+    }
   }
 </style>
