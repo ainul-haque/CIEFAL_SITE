@@ -1,79 +1,114 @@
-    <footer>
-      <div class="container py-4">
-        <div class="row align-items-center">
-          <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
-            <img
-              src="/images/Logo.png"
-              alt="CIEFAL Logo"
-              style="height: 48px"
-            />
-          </div>
-          <div class="col-md-4 text-center mb-3 mb-md-0">
-            <h5 class="mb-1 fw-bold" style="color: #1e3c72">CIEFAL</h5>
-            <small class="text-muted"
-              >Cambridge Institute of English for Advanced Learning</small
-            >
-          </div>
-          <div class="col-md-4 text-center text-md-end">
-            <a
-              href="https://www.facebook.com/"
-              target="_blank"
-              class="text-decoration-none me-3"
-              aria-label="Facebook"
-            >
-              <i class="bi bi-facebook fs-4" style="color: #4267b2"></i>
-            </a>
-            <a
-              href="https://www.instagram.com/"
-              target="_blank"
-              class="text-decoration-none me-3"
-              aria-label="Instagram"
-            >
-              <i class="bi bi-instagram fs-4" style="color: #c13584"></i>
-            </a>
-            <a
-              href="mailto:info@ciefal.com"
-              class="text-decoration-none"
-              aria-label="Email"
-            >
-              <i class="bi bi-envelope-fill fs-4" style="color: #1e3c72"></i>
-            </a>
-          </div>
+<footer class="custom-footer bg-dark text-light pt-5">
+  <div class="container">
+    <div class="row text-center text-md-start">
+      <!-- Section 1: Logo and Company Name -->
+      <div class="col-12 col-md-4 mb-4 mb-md-0 d-flex flex-column align-items-center align-items-md-start">
+        <img src="/images/Logo.png" alt="CIEFAL Logo" style="height: 56px; margin-bottom: 0.75rem" />
+        <h5 class="fw-bold mb-1">CIEFAL</h5>
+        <small class="text-secondary">Cambridge Institute of English for Advanced Learning</small>
+      </div>
+      <!-- Section 2: Useful Links -->
+      <div class="col-12 col-md-4 mb-4 mb-md-0 d-flex flex-column align-items-center">
+        <h6 class="fw-bold mb-3">Useful Links</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="footer-link">Placeholder Link 1</a></li>
+          <li><a href="#" class="footer-link">Placeholder Link 2</a></li>
+          <li><a href="#" class="footer-link">Placeholder Link 3</a></li>
+          <li><a href="#" class="footer-link">Placeholder Link 4</a></li>
+        </ul>
+      </div>
+      <!-- Section 3: Social Links -->
+      <div class="col-12 col-md-4 d-flex flex-column align-items-center">
+        <div class="w-100 mb-3">
+          <h6 class="fw-bold text-center mb-0">Connect with Us</h6>
         </div>
-        <hr class="my-4" />
-        <div class="row">
-          <div class="col text-center">
-            <nav class="d-inline-block">
-              <a href="/" class="text-muted mx-2 text-decoration-none">Home</a>
-              <a href="/courses" class="text-muted mx-2 text-decoration-none"
-                >Courses</a
-              >
-              <a href="/admission" class="text-muted mx-2 text-decoration-none"
-                >Admission</a
-              >
-              <a href="/about" class="text-muted mx-2 text-decoration-none"
-                >About</a
-              >
-              <a href="/contact" class="text-muted mx-2 text-decoration-none"
-                >Contact</a
-              >
-            </nav>
+        <div class="d-flex w-100 justify-content-center gap-3">
+          <div class="footer-social-inner d-flex flex-column gap-2 align-items-center">
+            <a href="#" class="footer-social-icon d-flex align-items-center gap-2" aria-label="Facebook">
+              <i class="bi bi-facebook"></i> <span>Facebook</span>
+            </a>
+            <a href="#" class="footer-social-icon d-flex align-items-center gap-2" aria-label="Instagram">
+              <i class="bi bi-instagram"></i> <span>Instagram</span>
+            </a>
           </div>
-        </div>
-        <div class="row mt-3">
-          <div class="col text-center">
-            <small class="text-muted"
-              >&copy; <%= new Date().getFullYear() %> CIEFAL. All rights
-              reserved.</small
-            >
+          <div class="footer-social-inner d-flex flex-column gap-2 align-items-center">
+            <a href="#" class="footer-social-icon d-flex align-items-center gap-2" aria-label="Twitter">
+              <i class="bi bi-twitter"></i> <span>Twitter</span>
+            </a>
+            <a href="#" class="footer-social-icon d-flex align-items-center gap-2" aria-label="LinkedIn">
+              <i class="bi bi-linkedin"></i> <span>LinkedIn</span>
+            </a>
           </div>
         </div>
       </div>
-      <!-- Bootstrap Icons CDN -->
-      <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
-      />
-    </footer>
-    <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
-</div>
+    </div>
+    <!-- Bottom Section: Contact & Copyright -->
+    <hr class="border-secondary my-4" />
+    <div class="row">
+      <div class="col text-center">
+        <div class="mb-2">
+          <span class="me-3"><i class="bi bi-envelope"></i> info@ciefal.com</span>
+          <span><i class="bi bi-telephone"></i> +91-XXXXXXXXXX</span>
+        </div>
+        <small class="text-secondary">&copy; <%= new Date().getFullYear() %> CIEFAL. All rights
+            reserved.</small>
+      </div>
+    </div>
+  </div>
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+</footer>
+
+<style>
+  .custom-footer {
+    background: #23272b;
+    color: #f8f9fa;
+  }
+
+  .custom-footer .footer-link {
+    color: #f8f9fa;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.5rem;
+    transition: color 0.2s;
+  }
+
+  .custom-footer .footer-link:hover {
+    color: #0d6efd;
+    text-decoration: underline;
+  }
+
+  .custom-footer .footer-social-inner {
+    gap: 0.5rem;
+  }
+
+  .custom-footer .footer-social-icon {
+    color: #f8f9fa;
+    font-size: 1.15rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 6px;
+    transition: color 0.2s, background 0.2s, transform 0.2s;
+    text-decoration: none;
+    min-width: 120px;
+    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+  }
+
+  .custom-footer .footer-social-icon:hover {
+    color: #0d6efd;
+    background: #23272b;
+    transform: scale(1.05);
+  }
+
+  .custom-footer .footer-social-icon span {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+  }
+
+  .custom-footer .bi {
+    vertical-align: middle;
+  }
+</style>
+<script src="/bootstrap/js/bootstrap.bundle.min.js"></script>

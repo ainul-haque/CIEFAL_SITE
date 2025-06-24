@@ -1,5 +1,5 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-2">  
-  <div class="container-fluid px-3 px-md-4">    
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-2">
+  <div class="container-fluid px-3 px-md-4">
     <a class="navbar-brand d-flex align-items-center" href="/">
       <img src="/images/Logo.png" alt="CIEFAL Logo" width="36" height="36" class="me-2" />
       <span class="fw-bold">CIEFAL</span>
@@ -33,7 +33,9 @@
 <div class="mobile-menu-overlay"></div>
 <div class="mobile-menu">
   <div class="mobile-menu-header">
-    <button class="mobile-menu-close" aria-label="Close menu">&times;</button>
+    <button class="mobile-menu-close styled-close" aria-label="Close menu">
+      <i class="bi bi-x-lg close-cross-icon"></i>
+    </button>
   </div>
   <div class="mobile-menu-body">
     <ul class="mobile-nav">
@@ -53,7 +55,63 @@
         <a class="mobile-nav-link" href="/about">About</a>
       </li>
     </ul>
+    <div class="ciefal-full-form-box mt-4">
+      <div class="ciefal-full-form text-center p-3">
+        <h6 class="fw-bold mb-2" style="color: #0d6efd; letter-spacing: 1px;">CIEFAL</h6>
+        <p class="mb-0" style="font-size: 0.98rem; color: #495057;">Cambridge Institute of English for Advanced Learning
+        </p>
+      </div>
+    </div>
   </div>
 </div>
 
 <script src="/js/navbar.js"></script>
+
+<style>
+  nav.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1050;
+    background: #fff;
+    transition: box-shadow 0.3s, background 0.3s;
+  }
+
+  .close-cross-icon {
+    font-size: 2rem;
+    color: #0d6efd;
+    transition: color 0.25s, background 0.25s, box-shadow 0.25s, transform 0.25s;
+    border-radius: 50%;
+    padding: 0.25rem;
+    background: transparent;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mobile-menu-close:hover .close-cross-icon,
+  .mobile-menu-close:focus .close-cross-icon {
+    color: #fff;
+    background: #0d6efd;
+    box-shadow: 0 4px 16px rgba(13, 110, 253, 0.15);
+    transform: scale(1.15) rotate(90deg);
+  }
+
+  .ciefal-full-form-box {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+  }
+
+  .ciefal-full-form {
+    background: linear-gradient(135deg, #f0f7ff 60%, #e6f0fd 100%);
+    border: 1px solid #e3eafc;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(13, 110, 253, 0.08);
+    transition: box-shadow 0.2s, background 0.2s;
+  }
+
+  .ciefal-full-form:hover {
+    box-shadow: 0 4px 16px rgba(13, 110, 253, 0.15);
+    background: linear-gradient(135deg, #e6f0fd 60%, #f0f7ff 100%);
+  }
+</style>
