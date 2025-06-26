@@ -10,9 +10,11 @@
 /* Bootstrap-enhanced Navbar Styles */
 /* Main Navbar Styles */
 .navbar {
-  position: relative;
+  position: sticky;
+  top: 0;
   z-index: 1030;
   transition: all 0.3s ease;
+  background: linear-gradient(90deg, #e3ecfa 0%, #d0dbf2 100%) !important;
 }
 
 .container-fluid {
@@ -35,7 +37,7 @@
   transition: all 0.3s ease;
 }
 
-.navbar-brand img, 
+.navbar-brand img,
 .navbar-brand span {
   transition: transform 0.3s ease;
 }
@@ -81,7 +83,7 @@
 }
 
 .navbar-nav .nav-link.active::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -116,7 +118,7 @@
 
 .toggle-icon::before,
 .toggle-icon::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 24px;
   height: 2px;
@@ -173,7 +175,7 @@
   right: -300px;
   width: 280px;
   height: 100%;
-  background-color: white;
+  background: linear-gradient(90deg, #e3ecfa 0%, #d0dbf2 100%);
   z-index: 1050;
   transition: right 0.3s ease;
   box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
@@ -287,13 +289,14 @@
   position: relative;
 }
 
-.custom-navbar .nav-link:hover, .custom-navbar .nav-link.active {
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-link.active {
   color: #0d6efd;
   background-color: rgba(13, 110, 253, 0.05);
 }
 
 .custom-navbar .nav-link::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -330,7 +333,7 @@
 }
 .custom-navbar-toggler-icon::before,
 .custom-navbar-toggler-icon::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   width: 24px;

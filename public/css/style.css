@@ -73,7 +73,7 @@ footer {
   justify-content: center;
   min-height: 60vh;
   padding: 2.5rem 0 2.5rem 0;
-  background: linear-gradient(120deg, #4f8cff 0%, #e0e7ff 100%);
+  background: linear-gradient(120deg, #e0e7ff 0%, #4f8cff 100%);
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -197,6 +197,16 @@ footer {
 .hero-section.mt-4,
 .hero-section.mt-md-5 {
   margin-top: 0 !important;
+}
+
+/* Remove any top margin from hero section when following carousel */
+.hero-section.mt-0 {
+  margin-top: 0 !important;
+}
+
+/* Remove bottom margin from carousel section */
+.carousel-section.mb-0 {
+  margin-bottom: 0 !important;
 }
 
 /* Fix for body/flex/column overflow issues */
@@ -379,4 +389,113 @@ footer.custom-footer i {
     padding-top: 2.2rem !important;
     font-size: 0.98rem;
   }
+}
+
+/* Features Section - 3x3 Grid, Distinct Gradient BG, Modern Cards */
+.features-section {
+  background: linear-gradient(135deg, #232526 0%, #4682ea 100%);
+  /* Deep blue to vibrant blue for contrast with hero */
+  padding: 4rem 0 4rem 0;
+  position: relative;
+  z-index: 1;
+}
+.features-section .container {
+  max-width: 1200px;
+}
+.features-section h2 {
+  color: #1a237e;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.feature-card {
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 16px rgba(79, 140, 255, 0.1);
+  transition: transform 0.18s, box-shadow 0.18s, border-color 0.18s;
+  cursor: pointer;
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.feature-card:hover,
+.feature-card:focus {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(13, 110, 253, 0.18);
+  border-color: #4f8cff;
+}
+.feature-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #4f8cff 0%, #e0e7ff 100%);
+  color: #1a237e;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(79, 140, 255, 0.1);
+}
+.feature-card h5 {
+  color: #1a237e;
+  font-size: 1.18rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.feature-card p {
+  color: #374151;
+  font-size: 1.01rem;
+}
+@media (max-width: 991.98px) {
+  .features-section {
+    padding: 2.5rem 0 2.5rem 0;
+  }
+  .feature-card {
+    min-height: 220px;
+    padding: 1.2rem 0.7rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .features-section {
+    padding: 1.5rem 0 1.5rem 0;
+  }
+  .feature-card {
+    min-height: 180px;
+    padding: 1rem 0.5rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .features-section {
+    padding: 1rem 0 1rem 0;
+  }
+  .feature-card {
+    min-height: 140px;
+    padding: 0.7rem 0.3rem;
+  }
+}
+
+/* Carousel caption text shadow for readability */
+.carousel-caption.text-shadow-dark h5,
+.carousel-caption.text-shadow-dark p {
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.7), 0 1px 2px rgba(0, 0, 0, 0.5);
+  color: #fff !important;
+}
+
+/* About page card/box hover effects */
+.about-mission-section .bg-white,
+.about-why-section .card,
+.director-message-box {
+  transition: transform 0.18s, box-shadow 0.18s, border-color 0.18s;
+  box-shadow: 0 2px 16px rgba(79, 140, 255, 0.1);
+  border-radius: 1.1rem;
+}
+.about-mission-section .bg-white:hover,
+.about-why-section .card:hover,
+.director-message-box:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(13, 110, 253, 0.18);
+  border-color: #4f8cff;
+  z-index: 2;
 }
