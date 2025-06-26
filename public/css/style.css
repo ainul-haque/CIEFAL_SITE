@@ -27,18 +27,356 @@
 html,
 body {
   height: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 body {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
-main,
-.main-content {
+main.main-content {
   flex: 1 0 auto;
+  width: 100%;
 }
 footer {
-  flex-shrink: 0;
   margin-top: auto;
+}
+
+/* More compact carousel height for all screens */
+.carousel-inner {
+  max-height: 220px;
+}
+
+.carousel-item img {
+  max-height: 220px;
   width: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 576px) {
+  .carousel-inner,
+  .carousel-item img {
+    max-height: 155px;
+  }
+  .carousel-caption {
+    font-size: 0.92rem;
+    padding-bottom: 0.3rem;
+  }
+}
+
+/* Hero Section Styles - Duotone Gradient BG (Colors Only) */
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  padding: 2.5rem 0 2.5rem 0;
+  background: linear-gradient(120deg, #4f8cff 0%, #e0e7ff 100%);
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.hero-bg-img {
+  display: none;
+}
+.hero-content,
+.hero-section .container {
+  position: relative;
+  z-index: 2;
+}
+.ciefal-short-form {
+  display: inline-block;
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #0d6efd;
+  letter-spacing: 2px;
+  position: relative;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.ciefal-full-form {
+  display: block;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  left: 50%;
+  top: 120%;
+  transform: translateX(-50%) scale(0.95);
+  min-width: 220px;
+  background: #fff;
+  color: #0d6efd;
+  border-radius: 8px;
+  box-shadow: 0 4px 24px rgba(13, 110, 253, 0.1);
+  padding: 0.75rem 1.25rem;
+  font-size: 1.08rem;
+  font-weight: 500;
+  white-space: pre-line;
+  transition: opacity 0.3s, transform 0.3s;
+  z-index: 2;
+  border: 1px solid #e3eafc;
+}
+.ciefal-short-form:hover .ciefal-full-form,
+.ciefal-short-form:focus .ciefal-full-form {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(-50%) scale(1);
+}
+.hero-quote h2 {
+  font-size: 2rem;
+  color: #222;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.hero-subtext p {
+  color: #495057;
+  font-size: 1.15rem;
+  margin-bottom: 0;
+}
+.btn-gradient {
+  background: linear-gradient(90deg, #0d6efd 0%, #4f8cff 100%);
+  color: #fff;
+  border: none;
+  transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+.btn-gradient:hover,
+.btn-gradient:focus {
+  background: linear-gradient(90deg, #0b5ed7 0%, #2563eb 100%);
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(13, 110, 253, 0.18);
+  transform: translateY(-2px) scale(1.04);
+}
+.hero-btn {
+  margin-top: 1.2rem;
+  padding: 0.7rem 2.2rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+  border-radius: 2rem;
+  box-shadow: 0 2px 8px rgba(13, 110, 253, 0.1);
+}
+.hero-img {
+  max-width: 100%;
+  max-height: 340px;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 24px rgba(13, 110, 253, 0.1);
+  object-fit: cover;
+}
+@media (max-width: 991.98px) {
+  .hero-section {
+    min-height: 40vh;
+    padding: 1.5rem 0 1.5rem 0;
+  }
+  .hero-img {
+    max-height: 160px;
+  }
+}
+@media (max-width: 767.98px) {
+  .hero-section {
+    min-height: 30vh;
+    padding: 1.2rem 0 0.7rem 0;
+  }
+  .hero-img {
+    display: none;
+    max-height: 100px;
+    padding-top: 0;
+  }
+}
+@media (max-width: 575.98px) {
+  .hero-section {
+    min-height: 20vh;
+    padding: 0.7rem 0 0.3rem 0;
+  }
+  .hero-img {
+    display: none;
+    max-height: 70px;
+  }
+}
+
+/* Remove any margin-top from hero-section if present */
+.hero-section.mt-4,
+.hero-section.mt-md-5 {
+  margin-top: 0 !important;
+}
+
+/* Fix for body/flex/column overflow issues */
+body,
+html {
+  height: auto;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+/* Ensure main content doesn't get squished by sticky/fixed footer */
+main,
+.main-content,
+#main-content {
+  min-height: 1px;
+}
+
+/* Hero Section Images - Even Larger, Less Border Radius */
+.hero-img-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  min-height: 320px;
+  margin-top: 1.2rem;
+  gap: 1.5rem;
+}
+.hero-img-top {
+  width: 100%;
+  max-width: 520px;
+  height: 220px;
+  border-radius: 0.6rem;
+  object-fit: cover;
+  box-shadow: 0 4px 24px rgba(13, 110, 253, 0.13);
+  transition: transform 0.18s, box-shadow 0.18s;
+}
+.hero-img-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 520px;
+}
+.hero-img-below {
+  width: 48%;
+  height: 140px;
+  border-radius: 0.4rem;
+  object-fit: cover;
+  box-shadow: 0 2px 12px rgba(13, 110, 253, 0.1);
+  transition: transform 0.18s, box-shadow 0.18s;
+}
+.hero-img-top:hover,
+.hero-img-below:hover {
+  transform: scale(1.04);
+  box-shadow: 0 8px 32px rgba(13, 110, 253, 0.18);
+}
+@media (max-width: 991.98px) {
+  .hero-img-group {
+    min-height: 180px;
+    margin-top: 0.7rem;
+    gap: 0.7rem;
+  }
+  .hero-img-top {
+    max-width: 320px;
+    height: 120px;
+  }
+  .hero-img-row {
+    max-width: 320px;
+    gap: 0.5rem;
+  }
+  .hero-img-below {
+    height: 70px;
+  }
+}
+@media (max-width: 767.98px) {
+  .hero-img-group {
+    display: none;
+  }
+}
+
+/* Hero Section Text Contrast and Appearance */
+.hero-content {
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 1.1rem;
+  box-shadow: 0 8px 32px rgba(13, 110, 253, 0.1);
+  padding: 2.2rem 2rem 2.2rem 2rem;
+  max-width: 650px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  backdrop-filter: blur(2px);
+}
+.ciefal-short-form,
+.hero-quote h2,
+.hero-subtext p {
+  color: #1a237e !important;
+  text-shadow: 0 2px 8px rgba(79, 140, 255, 0.08);
+}
+.hero-quote h2 {
+  font-weight: 700;
+}
+.hero-subtext p {
+  color: #374151 !important;
+}
+@media (max-width: 991.98px) {
+  .hero-content {
+    padding: 1.2rem 0.7rem 1.5rem 0.7rem;
+    max-width: 98vw;
+  }
+}
+
+/* Box sizing and footer adjustment */
+html,
+body,
+#root,
+.main-content {
+  box-sizing: border-box;
+}
+
+.main-content > *:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* --- Sticky-to-bottom footer layout (not sticky/fixed, just flex) --- */
+html,
+body {
+  height: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main.main-content {
+  flex: 1 0 auto;
+  width: 100%;
+}
+footer {
+  margin-top: auto;
+}
+
+/* Footer Theme - Matches Site, Dark Gradient, High Contrast Text */
+footer.custom-footer {
+  background: linear-gradient(90deg, #1e3c72 0%, #232526 100%) !important;
+  color: #f3f6fa;
+  border-top: 2px solid #4f8cff;
+}
+footer.custom-footer h5,
+footer.custom-footer h6,
+footer.custom-footer .footer-link,
+footer.custom-footer small,
+footer.custom-footer span,
+footer.custom-footer a {
+  color: #f3f6fa !important;
+  text-shadow: 0 1px 4px rgba(30, 60, 114, 0.12);
+}
+footer.custom-footer .footer-link:hover,
+footer.custom-footer a:hover {
+  color: #4f8cff !important;
+  text-decoration: underline;
+}
+footer.custom-footer hr {
+  border-color: #4f8cff;
+  opacity: 0.25;
+}
+footer.custom-footer .text-secondary {
+  color: #b0b8c9 !important;
+}
+footer.custom-footer i {
+  color: #4f8cff;
+}
+@media (max-width: 767.98px) {
+  footer.custom-footer {
+    padding-top: 2.2rem !important;
+    font-size: 0.98rem;
+  }
 }
