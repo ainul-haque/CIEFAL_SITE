@@ -1,31 +1,51 @@
-const { GoogleSpreadsheet } = require("google-spreadsheet");
+const { google } = require("googleapis");
 
 exports.handleForm = async (req, res) => {
   const { name, email, phone, course, message } = req.body;
 
   try {
-    const doc = new GoogleSpreadsheet(process.env.SHEET_ID);
+    console.log("KEY START:", process.env.GOOGLE_PRIVATE_KEY.slice(0, 50));
 
-    await doc.useServiceAccountAuth({
-      client_email: process.env.GOOGLE_SERVICE_EMAIL,
-      private_key: process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/g, "\n"),
+    if (
+      !process.env.SHEET_ID ||
+      !process.env.GOOGLE_SERVICE_EMAIL ||
+      !process.env.GOOGLE_PRIVATE_KEY
+    ) {
+      throw new Error(
+        "Missing Google Sheets credentials in environment variables."
+      );
+    }
+
+    const auth = new google.auth.GoogleAuth({
+      credentials: {
+        client_email: process.env.GOOGLE_SERVICE_EMAIL,
+        private_key: process.env.GOOGLE_PRIVATE_KEY, // ✅ only works if real line breaks
+      },
+      scopes: ["https://www.googleapis.com/auth/spreadsheets"],
     });
 
-    await doc.loadInfo();
-    const sheet = doc.sheetsByIndex[0]; // first sheet
+    const sheets = google.sheets({ version: "v4", auth });
 
-    await sheet.addRow({
-      Name: name,
-      Email: email,
-      Phone: phone,
-      Course: course,
-      Message: message,
-      Timestamp: new Date().toLocaleString(),
+    const response = await sheets.spreadsheets.values.append({
+      spreadsheetId: process.env.SHEET_ID,
+      range: "Sheet1!A1:F1",
+      valueInputOption: "USER_ENTERED",
+      requestBody: {
+        values: [
+          [name, email, phone, course, message, new Date().toLocaleString()],
+        ],
+      },
     });
+
+    console.log(
+      "Google Sheets API response:",
+      response.status,
+      response.statusText
+    );
 
     res.redirect("/thankyou");
   } catch (error) {
     console.error("Form submission failed:", error);
-    res.send("There was an error. Please try again later.");
+    res.status(500).send("There was an error: " + error.message);
   }
 };

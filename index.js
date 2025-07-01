@@ -23,7 +23,7 @@ const pageRoutes = require("./src/routes/pageRoutes");
 const formRoutes = require("./src/routes/formRoutes");
 
 app.use("/", pageRoutes);
-app.use("/submit-form", formRoutes);
+app.use("/admission-form", formRoutes);
 
 // 404 Error Page route
 app.use((req, res) => {
