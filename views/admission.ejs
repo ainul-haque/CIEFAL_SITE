@@ -1,33 +1,30 @@
 <%- include("partials/header") %>
 
-
-<link rel="stylesheet" href="/css/admission.css">
-
-<section class="admission-section">
-  <div class="container-fluid px-2 px-sm-3 px-md-4 h-100">
-    <div class="row justify-content-center align-items-center min-vh-100">
-      <div class="col-12 col-sm-11 col-md-10 col-lg-8 col-xl-7">
+<section class="admission-section" style="background: linear-gradient(120deg, #e0e7ff 0%, #b3c6f7 100%); min-height: 100vh; min-height: 100dvh; box-sizing: border-box; display: flex; flex-direction: column; justify-content: flex-start; flex: 1 0 auto;">
+  <div class="container px-1 px-sm-2 px-md-4" style="flex: 1 0 auto; display: flex; flex-direction: column; justify-content: center;">
+    <div class="row justify-content-center flex-grow-1 align-items-center" style="min-height: 60vh;">
+      <div class="col-12 col-sm-12 col-md-10 col-lg-8 col-xl-7">
         <div class="text-center mb-4">
           <h1 class="fw-bold">Apply for Admission</h1>
           <p class="text-muted">Fill in your details and we’ll reach out to help you join the right Spoken English course.</p>
         </div>
-        <form action="/admission-form" method="POST" autocomplete="on" class="p-2 p-sm-3 p-md-4">
-          <div class="row g-3 g-md-4">
+        <form action="/admission-form" method="POST" autocomplete="on" class="p-1 p-sm-2 p-md-4 w-100" style="overflow:visible; background: none; box-shadow: none; border-radius: 0;">
+          <div class="row g-3 g-md-4 align-items-end">
             <div class="col-12 col-md-6">
               <label for="name" class="form-label fw-semibold">Full Name</label>
-              <input type="text" class="form-control form-control-lg" id="name" name="name" placeholder="Your full name" required>
+              <input type="text" class="form-control form-control-lg" id="name" name="name" placeholder="Your full name" required style="max-width: 100%; margin: 0 auto;">
             </div>
             <div class="col-12 col-md-6">
               <label for="email" class="form-label fw-semibold">Email Address</label>
-              <input type="email" class="form-control form-control-lg" id="email" name="email" placeholder="you@example.com" required>
+              <input type="email" class="form-control form-control-lg" id="email" name="email" placeholder="you@example.com" required style="max-width: 100%; margin: 0 auto;">
             </div>
             <div class="col-12 col-md-6">
               <label for="phone" class="form-label fw-semibold">Phone Number</label>
-              <input type="tel" class="form-control form-control-lg" id="phone" name="phone" placeholder="Your phone number" required>
+              <input type="tel" class="form-control form-control-lg" id="phone" name="phone" placeholder="Your phone number" required style="max-width: 100%; margin: 0 auto;">
             </div>
             <div class="col-12 col-md-6">
               <label for="course" class="form-label fw-semibold">Select Course</label>
-              <select class="form-select form-select-lg" id="course" name="course" required>
+              <select class="form-select form-select-lg" id="course" name="course" required style="max-width: 100%; margin: 0 auto;">
                 <option selected disabled value="">-- Select a Course --</option>
                 <option value="Basic English">Basic English</option>
                 <option value="General Spoken English">General Spoken English</option>
@@ -37,7 +34,7 @@
             </div>
             <div class="col-12">
               <label for="message" class="form-label fw-semibold">Message (Optional)</label>
-              <textarea class="form-control form-control-lg" id="message" name="message" rows="3" placeholder="Any specific questions or requests?"></textarea>
+              <textarea class="form-control form-control-lg" id="message" name="message" rows="3" placeholder="Any specific questions or requests?" style="resize:vertical; min-height: 90px; max-height: 300px; display: block; overflow-y:auto;"></textarea>
             </div>
           </div>
           <div class="text-center mt-4 mt-md-5">
@@ -47,6 +44,96 @@
       </div>
     </div>
   </div>
+
+<style>
+  .admission-section {
+    min-height: 100vh;
+    min-height: 100dvh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex: 1 0 auto;
+  }
+  .admission-section .container {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 0;
+    padding-bottom: 0;
+  }
+  .admission-section form {
+    background: none;
+    box-shadow: none;
+    border-radius: 0;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 0;
+    padding: 0;
+  }
+  .admission-section .form-control,
+  .admission-section .form-select {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    margin: 0;
+    background: #fff;
+    border-radius: 0.5rem;
+    border: 1px solid #b3c6f7;
+    box-shadow: none;
+  }
+  .admission-section textarea.form-control {
+    resize: vertical;
+    min-height: 90px;
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  .admission-section .row.g-3.g-md-4 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .admission-section .col-12,
+  .admission-section .col-md-6 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .admission-section .text-center.mt-4.mt-md-5 {
+    margin-top: 2rem !important;
+    margin-bottom: 0;
+  }
+  @media (max-width: 767.98px) {
+    .admission-section {
+      padding-top: 40px !important;
+      padding-bottom: 40px !important;
+    }
+    .admission-section .container {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+    .admission-section .form-control,
+    .admission-section .form-select {
+      font-size: 1rem;
+    }
+  }
+  @media (min-width: 768px) {
+    .admission-section {
+      padding-top: 80px !important;
+      padding-bottom: 80px !important;
+    }
+    .admission-section .form-control,
+    .admission-section .form-select {
+      font-size: 1.15rem;
+    }
+  }
+  /* Prevent overlap with header/footer */
+  body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+</style>
 </section>
 
 <%- include("partials/footer") %>

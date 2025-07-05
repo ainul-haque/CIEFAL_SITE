@@ -1,4 +1,5 @@
 const { google } = require("googleapis");
+const { sendOwnerNotification, sendStudentConfirmation } = require("./mailer");
 
 exports.handleForm = async (req, res) => {
   const { name, email, phone, course, message } = req.body;
@@ -37,6 +38,10 @@ exports.handleForm = async (req, res) => {
       },
     });
 
+    // ✅ Send Emails
+    await sendOwnerNotification({ name, email, phone, course, message });
+    await sendStudentConfirmation({ name, email, phone, course, message });
+
     console.log(
       "Google Sheets API response:",
       response.status,
@@ -44,8 +49,10 @@ exports.handleForm = async (req, res) => {
     );
 
     res.redirect("/thankyou");
+
   } catch (error) {
     console.error("Form submission failed:", error);
     res.status(500).send("There was an error: " + error.message);
   }
 };
+

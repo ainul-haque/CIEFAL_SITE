@@ -1,0 +1,59 @@
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  /* If you want a fixed height header, set it here, or let content decide */
+}
+
+
+main.thankyou-viewport {
+  min-height: calc(100vh -  var(--header-height, 0px) - var(--footer-height, 0px));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+}
+
+header {
+  --header-height: 0px;
+}
+footer {
+  --footer-height: 0px;
+}
+
+footer {
+  /* Footer will be pushed below the viewport if content is short */
+}
+
+.thankyou-card {
+  background: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+  padding: 3rem 2.5rem;
+  max-width: 420px;
+  width: 100%;
+  text-align: center;
+  animation: fadeIn 0.8s;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+.thankyou-icon {
+  font-size: 3.5rem;
+  color: #28a745;
+  margin-bottom: 1rem;
+}
+
+

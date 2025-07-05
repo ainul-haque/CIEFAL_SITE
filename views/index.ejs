@@ -1,4 +1,5 @@
 <%- include('partials/header') %>
+
     <main class="main-content">
 
         <!-- Carousel Section -->
@@ -476,12 +477,16 @@
             </div>
         </section>
     </main>
+
 <%- include('partials/footer') %>
+
 <script>
+    
 function toggleCourseDetails(btn) {
   const dropdown = btn.nextElementSibling;
   dropdown.classList.toggle('open');
   btn.querySelector('i').classList.toggle('bi-chevron-down');
   btn.querySelector('i').classList.toggle('bi-chevron-up');
 }
+
 </script>

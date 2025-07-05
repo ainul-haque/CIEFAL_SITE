@@ -1,10 +1,14 @@
 <%- include('partials/header') %>
-    <main class="main-content">
-        <!-- Thank you content goes here -->
-        <div class="container text-center py-5">
-            <h1 class="display-4 text-success">Thank You!</h1>
-            <p class="lead">Your submission has been received. We appreciate your interest!</p>
-            <a href="/" class="btn btn-primary mt-3">Back to Home</a>
-        </div>
-    </main>
-    <%- include('partials/footer') %>
+
+<main class="thankyou-viewport">
+  <div class="thankyou-card">
+    <div class="thankyou-icon">
+      <i class="bi bi-emoji-smile"></i>
+    </div>
+    <h1 class="display-5 fw-bold text-success mb-3">Thank You!</h1>
+    <p class="lead mb-4">Your submission has been received.<br>We appreciate your interest!</p>
+    <a href="/" class="btn btn-primary btn-lg shadow-sm">Back to Home</a>
+  </div>
+</main>
+
+<%- include('partials/footer') %>
