@@ -25,9 +25,18 @@ const formRoutes = require("./src/routes/formRoutes");
 app.use("/", pageRoutes);
 app.use("/admission-form", formRoutes);
 
+
 // 404 Error Page route
 app.use((req, res) => {
   res.status(404).render("404", { title: "404 | Page Not Found" });
+});
+
+// Global error handler (prevents 502 Bad Gateway from unhandled errors)
+app.use((err, req, res, next) => {
+  console.error('Global error handler:', err.stack || err);
+  // If headers already sent, delegate to default Express error handler
+  if (res.headersSent) return next(err);
+  res.status(500).render("404", { title: "500 | Server Error" });
 });
 
 // Start the Server
