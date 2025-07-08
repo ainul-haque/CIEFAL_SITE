@@ -31,7 +31,7 @@ app.use((req, res) => {
 });
 
 // Start the Server
-app.listen(PORT, () => {
+app.listen(PORT, "0.0.0.0", () => {
   console.log(
     `🚀⚡ CIEFAL_SITE ⚡🚀 server is running on link => http://127.0.0.1:${PORT}`
   );

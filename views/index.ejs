@@ -2,32 +2,29 @@
 
     <main class="main-content">
 
-        <!-- Carousel Section -->
-        <section class="carousel-section mb-0">
+        <!-- Carousel Section (PW.live inspired) -->
+        <section class="carousel-section mb-0" style="padding:0;">
             <div id="mainCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3500">
+                <!-- Indicators -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="https://images.unsplash.com/photo-1460518451285-97b6aa326961?auto=format&fit=crop&w=900&q=80"
-                            class="d-block w-100" alt="Learning Together">
-                        <div class="carousel-caption d-none d-md-block text-shadow-dark">
-                            <h5 class="text-white fw-bold">Collaborative Learning</h5>
-                            <p class="text-white">Grow together in a vibrant, supportive environment.</p>
+                        <div class="carousel-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1460518451285-97b6aa326961?auto=format&fit=crop&w=1600&q=80" class="d-block w-100 carousel-img" alt="Learning Together">
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=crop&w=900&q=80"
-                            class="d-block w-100" alt="Student Reading">
-                        <div class="carousel-caption d-none d-md-block text-shadow-dark">
-                            <h5 class="text-white fw-bold">Expert Guidance</h5>
-                            <p class="text-white">Learn from certified, passionate instructors.</p>
+                        <div class="carousel-img-wrapper">
+                            <img src="/images/banners/test.jpg" class="d-block w-100 carousel-img" alt="Student Reading">
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=900&q=80"
-                            class="d-block w-100" alt="Classroom Discussion">
-                        <div class="carousel-caption d-none d-md-block text-shadow-dark">
-                            <h5 class="text-white fw-bold">Modern Classrooms</h5>
-                            <p class="text-white">Experience interactive and engaging lessons.</p>
+                        <div class="carousel-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=1600&q=80" class="d-block w-100 carousel-img" alt="Classroom Discussion">
                         </div>
                     </div>
                 </div>
@@ -195,31 +192,36 @@
                                 <h4 class="course-title">Spoken English</h4>
                             </div>
                             <div class="card-body course-card-body">
-        <p class="card-text course-desc">Boost your confidence and fluency in everyday English conversations for work, travel, and social life.</p>
-        <div class="course-details-horizontal">
-            <div class="course-detail-horizontal-col">
-                <span class="course-detail-horizontal-icon"><i class="bi bi-list-task"></i></span>
-                <span class="course-detail-horizontal-content">
-                    <span class="course-detail-horizontal-label">Contents</span>
-                    <span class="course-detail-horizontal-value">Conversation, Pronunciation, Listening, Fluency, Vocabulary...more</span>
-                </span>
-            </div>
-            <div class="course-detail-horizontal-col">
-                <span class="course-detail-horizontal-icon"><i class="bi bi-clock-history"></i></span>
-                <span class="course-detail-horizontal-content">
-                    <span class="course-detail-horizontal-label">Duration</span>
-                    <span class="course-detail-horizontal-value">3 months</span>
-                </span>
-            </div>
-            <div class="course-detail-horizontal-col">
-                <span class="course-detail-horizontal-icon"><i class="bi bi-flag"></i></span>
-                <span class="course-detail-horizontal-content">
-                    <span class="course-detail-horizontal-label">Pre-req</span>
-                    <span class="course-detail-horizontal-value">Basic English</span>
-                </span>
-            </div>
-        </div>
-                                <a href="/courses#spoken-english" class="btn btn-gradient w-100 fw-bold shadow-sm">View Course</a>
+                                <p class="card-text course-desc">Boost your confidence and fluency in everyday English
+                                    conversations for work, travel, and social life.</p>
+                                <div class="course-details-horizontal">
+                                    <div class="course-detail-horizontal-col">
+                                        <span class="course-detail-horizontal-icon"><i
+                                                class="bi bi-list-task"></i></span>
+                                        <span class="course-detail-horizontal-content">
+                                            <span class="course-detail-horizontal-label">Contents</span>
+                                            <span class="course-detail-horizontal-value">Conversation, Pronunciation,
+                                                Listening, Fluency, Vocabulary...more</span>
+                                        </span>
+                                    </div>
+                                    <div class="course-detail-horizontal-col">
+                                        <span class="course-detail-horizontal-icon"><i
+                                                class="bi bi-clock-history"></i></span>
+                                        <span class="course-detail-horizontal-content">
+                                            <span class="course-detail-horizontal-label">Duration</span>
+                                            <span class="course-detail-horizontal-value">3 months</span>
+                                        </span>
+                                    </div>
+                                    <div class="course-detail-horizontal-col">
+                                        <span class="course-detail-horizontal-icon"><i class="bi bi-flag"></i></span>
+                                        <span class="course-detail-horizontal-content">
+                                            <span class="course-detail-horizontal-label">Pre-req</span>
+                                            <span class="course-detail-horizontal-value">Basic English</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <a href="/courses#spoken-english" class="btn btn-gradient w-100 fw-bold shadow-sm">View
+                                    Course</a>
                             </div>
                         </div>
                     </div>
@@ -230,31 +232,36 @@
                                 <h4 class="course-title">IELTS Preparation</h4>
                             </div>
                             <div class="card-body course-card-body">
-        <p class="card-text course-desc">Achieve your target band in IELTS with expert guidance, practice tests, and personalized feedback.</p>
-        <div class="course-details-horizontal">
-            <div class="course-detail-horizontal-col">
-                <span class="course-detail-horizontal-icon"><i class="bi bi-list-task"></i></span>
-                <span class="course-detail-horizontal-content">
-                    <span class="course-detail-horizontal-label">Contents</span>
-                    <span class="course-detail-horizontal-value">Reading, Writing, Speaking, Listening, Practice Tests...more</span>
-                </span>
-            </div>
-            <div class="course-detail-horizontal-col">
-                <span class="course-detail-horizontal-icon"><i class="bi bi-clock-history"></i></span>
-                <span class="course-detail-horizontal-content">
-                    <span class="course-detail-horizontal-label">Duration</span>
-                    <span class="course-detail-horizontal-value">2-4 months</span>
-                </span>
-            </div>
-            <div class="course-detail-horizontal-col">
-                <span class="course-detail-horizontal-icon"><i class="bi bi-flag"></i></span>
-                <span class="course-detail-horizontal-content">
-                    <span class="course-detail-horizontal-label">Pre-req</span>
-                    <span class="course-detail-horizontal-value">Intermediate English</span>
-                </span>
-            </div>
-        </div>
-                                <a href="/courses#ielts" class="btn btn-gradient w-100 fw-bold shadow-sm">View Course</a>
+                                <p class="card-text course-desc">Achieve your target band in IELTS with expert guidance,
+                                    practice tests, and personalized feedback.</p>
+                                <div class="course-details-horizontal">
+                                    <div class="course-detail-horizontal-col">
+                                        <span class="course-detail-horizontal-icon"><i
+                                                class="bi bi-list-task"></i></span>
+                                        <span class="course-detail-horizontal-content">
+                                            <span class="course-detail-horizontal-label">Contents</span>
+                                            <span class="course-detail-horizontal-value">Reading, Writing, Speaking,
+                                                Listening, Practice Tests...more</span>
+                                        </span>
+                                    </div>
+                                    <div class="course-detail-horizontal-col">
+                                        <span class="course-detail-horizontal-icon"><i
+                                                class="bi bi-clock-history"></i></span>
+                                        <span class="course-detail-horizontal-content">
+                                            <span class="course-detail-horizontal-label">Duration</span>
+                                            <span class="course-detail-horizontal-value">2-4 months</span>
+                                        </span>
+                                    </div>
+                                    <div class="course-detail-horizontal-col">
+                                        <span class="course-detail-horizontal-icon"><i class="bi bi-flag"></i></span>
+                                        <span class="course-detail-horizontal-content">
+                                            <span class="course-detail-horizontal-label">Pre-req</span>
+                                            <span class="course-detail-horizontal-value">Intermediate English</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <a href="/courses#ielts" class="btn btn-gradient w-100 fw-bold shadow-sm">View
+                                    Course</a>
                             </div>
                         </div>
                     </div>
@@ -265,31 +272,36 @@
                                 <h4 class="course-title">Business English</h4>
                             </div>
                             <div class="card-body course-card-body">
-        <p class="card-text course-desc">Master professional English for meetings, emails, presentations, and workplace communication.</p>
-        <div class="course-details-horizontal">
-            <div class="course-detail-horizontal-col">
-                <span class="course-detail-horizontal-icon"><i class="bi bi-list-task"></i></span>
-                <span class="course-detail-horizontal-content">
-                    <span class="course-detail-horizontal-label">Contents</span>
-                    <span class="course-detail-horizontal-value">Vocabulary, Email, Meetings, Presentations, Reports...more</span>
-                </span>
-            </div>
-            <div class="course-detail-horizontal-col">
-                <span class="course-detail-horizontal-icon"><i class="bi bi-clock-history"></i></span>
-                <span class="course-detail-horizontal-content">
-                    <span class="course-detail-horizontal-label">Duration</span>
-                    <span class="course-detail-horizontal-value">3 months</span>
-                </span>
-            </div>
-            <div class="course-detail-horizontal-col">
-                <span class="course-detail-horizontal-icon"><i class="bi bi-flag"></i></span>
-                <span class="course-detail-horizontal-content">
-                    <span class="course-detail-horizontal-label">Pre-req</span>
-                    <span class="course-detail-horizontal-value">Intermediate English</span>
-                </span>
-            </div>
-        </div>
-                                <a href="/courses#business-english" class="btn btn-gradient w-100 fw-bold shadow-sm">View Course</a>
+                                <p class="card-text course-desc">Master professional English for meetings, emails,
+                                    presentations, and workplace communication.</p>
+                                <div class="course-details-horizontal">
+                                    <div class="course-detail-horizontal-col">
+                                        <span class="course-detail-horizontal-icon"><i
+                                                class="bi bi-list-task"></i></span>
+                                        <span class="course-detail-horizontal-content">
+                                            <span class="course-detail-horizontal-label">Contents</span>
+                                            <span class="course-detail-horizontal-value">Vocabulary, Email, Meetings,
+                                                Presentations, Reports...more</span>
+                                        </span>
+                                    </div>
+                                    <div class="course-detail-horizontal-col">
+                                        <span class="course-detail-horizontal-icon"><i
+                                                class="bi bi-clock-history"></i></span>
+                                        <span class="course-detail-horizontal-content">
+                                            <span class="course-detail-horizontal-label">Duration</span>
+                                            <span class="course-detail-horizontal-value">3 months</span>
+                                        </span>
+                                    </div>
+                                    <div class="course-detail-horizontal-col">
+                                        <span class="course-detail-horizontal-icon"><i class="bi bi-flag"></i></span>
+                                        <span class="course-detail-horizontal-content">
+                                            <span class="course-detail-horizontal-label">Pre-req</span>
+                                            <span class="course-detail-horizontal-value">Intermediate English</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <a href="/courses#business-english"
+                                    class="btn btn-gradient w-100 fw-bold shadow-sm">View Course</a>
                             </div>
                         </div>
                     </div>
@@ -300,31 +312,36 @@
                                 <h4 class="course-title">Advanced English Program</h4>
                             </div>
                             <div class="card-body course-card-body">
-        <p class="card-text course-desc">Sharpen your advanced grammar, vocabulary, and communication for academic and professional excellence.</p>
-        <div class="course-details-horizontal">
-            <div class="course-detail-horizontal-col">
-                <span class="course-detail-horizontal-icon"><i class="bi bi-list-task"></i></span>
-                <span class="course-detail-horizontal-content">
-                    <span class="course-detail-horizontal-label">Contents</span>
-                    <span class="course-detail-horizontal-value">Grammar, Essays, Debates, Advanced Vocabulary, Academic Writing...more</span>
-                </span>
-            </div>
-            <div class="course-detail-horizontal-col">
-                <span class="course-detail-horizontal-icon"><i class="bi bi-clock-history"></i></span>
-                <span class="course-detail-horizontal-content">
-                    <span class="course-detail-horizontal-label">Duration</span>
-                    <span class="course-detail-horizontal-value">4 months</span>
-                </span>
-            </div>
-            <div class="course-detail-horizontal-col">
-                <span class="course-detail-horizontal-icon"><i class="bi bi-flag"></i></span>
-                <span class="course-detail-horizontal-content">
-                    <span class="course-detail-horizontal-label">Pre-req</span>
-                    <span class="course-detail-horizontal-value">Upper-intermediate</span>
-                </span>
-            </div>
-        </div>
-                                <a href="/courses#advanced-english" class="btn btn-gradient w-100 fw-bold shadow-sm">View Course</a>
+                                <p class="card-text course-desc">Sharpen your advanced grammar, vocabulary, and
+                                    communication for academic and professional excellence.</p>
+                                <div class="course-details-horizontal">
+                                    <div class="course-detail-horizontal-col">
+                                        <span class="course-detail-horizontal-icon"><i
+                                                class="bi bi-list-task"></i></span>
+                                        <span class="course-detail-horizontal-content">
+                                            <span class="course-detail-horizontal-label">Contents</span>
+                                            <span class="course-detail-horizontal-value">Grammar, Essays, Debates,
+                                                Advanced Vocabulary, Academic Writing...more</span>
+                                        </span>
+                                    </div>
+                                    <div class="course-detail-horizontal-col">
+                                        <span class="course-detail-horizontal-icon"><i
+                                                class="bi bi-clock-history"></i></span>
+                                        <span class="course-detail-horizontal-content">
+                                            <span class="course-detail-horizontal-label">Duration</span>
+                                            <span class="course-detail-horizontal-value">4 months</span>
+                                        </span>
+                                    </div>
+                                    <div class="course-detail-horizontal-col">
+                                        <span class="course-detail-horizontal-icon"><i class="bi bi-flag"></i></span>
+                                        <span class="course-detail-horizontal-content">
+                                            <span class="course-detail-horizontal-label">Pre-req</span>
+                                            <span class="course-detail-horizontal-value">Upper-intermediate</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <a href="/courses#advanced-english"
+                                    class="btn btn-gradient w-100 fw-bold shadow-sm">View Course</a>
                             </div>
                         </div>
                     </div>
@@ -335,31 +352,36 @@
                                 <h4 class="course-title">General English Course</h4>
                             </div>
                             <div class="card-body course-card-body">
-        <p class="card-text course-desc">Build a strong foundation in English for everyday use, academics, and personal growth.</p>
-        <div class="course-details-horizontal">
-            <div class="course-detail-horizontal-col">
-                <span class="course-detail-horizontal-icon"><i class="bi bi-list-task"></i></span>
-                <span class="course-detail-horizontal-content">
-                    <span class="course-detail-horizontal-label">Contents</span>
-                    <span class="course-detail-horizontal-value">Grammar, Reading, Speaking, Listening, Writing...more</span>
-                </span>
-            </div>
-            <div class="course-detail-horizontal-col">
-                <span class="course-detail-horizontal-icon"><i class="bi bi-clock-history"></i></span>
-                <span class="course-detail-horizontal-content">
-                    <span class="course-detail-horizontal-label">Duration</span>
-                    <span class="course-detail-horizontal-value">3 months</span>
-                </span>
-            </div>
-            <div class="course-detail-horizontal-col">
-                <span class="course-detail-horizontal-icon"><i class="bi bi-flag"></i></span>
-                <span class="course-detail-horizontal-content">
-                    <span class="course-detail-horizontal-label">Pre-req</span>
-                    <span class="course-detail-horizontal-value">None</span>
-                </span>
-            </div>
-        </div>
-                                <a href="/courses#general-english" class="btn btn-gradient w-100 fw-bold shadow-sm">View Course</a>
+                                <p class="card-text course-desc">Build a strong foundation in English for everyday use,
+                                    academics, and personal growth.</p>
+                                <div class="course-details-horizontal">
+                                    <div class="course-detail-horizontal-col">
+                                        <span class="course-detail-horizontal-icon"><i
+                                                class="bi bi-list-task"></i></span>
+                                        <span class="course-detail-horizontal-content">
+                                            <span class="course-detail-horizontal-label">Contents</span>
+                                            <span class="course-detail-horizontal-value">Grammar, Reading, Speaking,
+                                                Listening, Writing...more</span>
+                                        </span>
+                                    </div>
+                                    <div class="course-detail-horizontal-col">
+                                        <span class="course-detail-horizontal-icon"><i
+                                                class="bi bi-clock-history"></i></span>
+                                        <span class="course-detail-horizontal-content">
+                                            <span class="course-detail-horizontal-label">Duration</span>
+                                            <span class="course-detail-horizontal-value">3 months</span>
+                                        </span>
+                                    </div>
+                                    <div class="course-detail-horizontal-col">
+                                        <span class="course-detail-horizontal-icon"><i class="bi bi-flag"></i></span>
+                                        <span class="course-detail-horizontal-content">
+                                            <span class="course-detail-horizontal-label">Pre-req</span>
+                                            <span class="course-detail-horizontal-value">None</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <a href="/courses#general-english" class="btn btn-gradient w-100 fw-bold shadow-sm">View
+                                    Course</a>
                             </div>
                         </div>
                     </div>
@@ -367,17 +389,22 @@
             </div>
         </section>
         <!-- Testimonials Section -->
-        <section class="testimonials-section py-5 position-relative" style="background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);">
+        <section class="testimonials-section py-5 position-relative"
+            style="background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);">
             <div class="container">
-                <h2 class="text-center mb-5 fw-bold display-4" style="color: #fff; text-shadow: 1px 1px 8px #222;">Our Testimonials</h2>
+                <h2 class="text-center mb-5 fw-bold display-4" style="color: #fff; text-shadow: 1px 1px 8px #222;">Our
+                    Testimonials</h2>
                 <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
                     <div class="col">
-                        <div class="testimonial-card card h-100 text-center p-4 border-0 shadow-lg testimonial-hover" style="background: #23395d; color: #fff;">
-                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Student testimonial" class="testimonial-avatar rounded-circle mb-3 mx-auto" style="border: 4px solid #fff;">
+                        <div class="testimonial-card card h-100 text-center p-4 border-0 shadow-lg testimonial-hover"
+                            style="background: #23395d; color: #fff;">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Student testimonial"
+                                class="testimonial-avatar rounded-circle mb-3 mx-auto" style="border: 4px solid #fff;">
                             <h5 class="mb-1 fw-bold" style="color: #ffd700;">Priya Sharma</h5>
                             <p class="mb-2 text-info small">Business English Graduate</p>
                             <blockquote class="blockquote mb-3">
-                                <p class="mb-0" style="color: #e0e0e0;">“CIEFAL gave me the confidence to speak English at work. The teachers are amazing and the classes are fun!”</p>
+                                <p class="mb-0" style="color: #e0e0e0;">“CIEFAL gave me the confidence to speak English
+                                    at work. The teachers are amazing and the classes are fun!”</p>
                             </blockquote>
                             <div class="testimonial-rating mt-2">
                                 <i class="bi bi-star-fill text-warning"></i>
@@ -389,12 +416,15 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="testimonial-card card h-100 text-center p-4 border-0 shadow-lg testimonial-hover" style="background: #23395d; color: #fff;">
-                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Student testimonial" class="testimonial-avatar rounded-circle mb-3 mx-auto" style="border: 4px solid #fff;">
+                        <div class="testimonial-card card h-100 text-center p-4 border-0 shadow-lg testimonial-hover"
+                            style="background: #23395d; color: #fff;">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Student testimonial"
+                                class="testimonial-avatar rounded-circle mb-3 mx-auto" style="border: 4px solid #fff;">
                             <h5 class="mb-1 fw-bold" style="color: #ffd700;">Rahul Mehta</h5>
                             <p class="mb-2 text-info small">IELTS Preparation</p>
                             <blockquote class="blockquote mb-3">
-                                <p class="mb-0" style="color: #e0e0e0;">“The interactive lessons and supportive community made learning enjoyable. I improved so much in just a few months!”</p>
+                                <p class="mb-0" style="color: #e0e0e0;">“The interactive lessons and supportive
+                                    community made learning enjoyable. I improved so much in just a few months!”</p>
                             </blockquote>
                             <div class="testimonial-rating mt-2">
                                 <i class="bi bi-star-fill text-warning"></i>
@@ -406,12 +436,15 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="testimonial-card card h-100 text-center p-4 border-0 shadow-lg testimonial-hover" style="background: #23395d; color: #fff;">
-                            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Student testimonial" class="testimonial-avatar rounded-circle mb-3 mx-auto" style="border: 4px solid #fff;">
+                        <div class="testimonial-card card h-100 text-center p-4 border-0 shadow-lg testimonial-hover"
+                            style="background: #23395d; color: #fff;">
+                            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Student testimonial"
+                                class="testimonial-avatar rounded-circle mb-3 mx-auto" style="border: 4px solid #fff;">
                             <h5 class="mb-1 fw-bold" style="color: #ffd700;">Ananya Desai</h5>
                             <p class="mb-2 text-info small">Spoken English</p>
                             <blockquote class="blockquote mb-3">
-                                <p class="mb-0" style="color: #e0e0e0;">“I loved the flexible schedule and personal feedback. CIEFAL truly cares about every student’s success.”</p>
+                                <p class="mb-0" style="color: #e0e0e0;">“I loved the flexible schedule and personal
+                                    feedback. CIEFAL truly cares about every student’s success.”</p>
                             </blockquote>
                             <div class="testimonial-rating mt-2">
                                 <i class="bi bi-star-fill text-warning"></i>
@@ -423,12 +456,16 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="testimonial-card card h-100 text-center p-4 border-0 shadow-lg testimonial-hover" style="background: #23395d; color: #fff;">
-                            <img src="https://randomuser.me/api/portraits/men/85.jpg" alt="Student testimonial" class="testimonial-avatar rounded-circle mb-3 mx-auto" style="border: 4px solid #fff;">
+                        <div class="testimonial-card card h-100 text-center p-4 border-0 shadow-lg testimonial-hover"
+                            style="background: #23395d; color: #fff;">
+                            <img src="https://randomuser.me/api/portraits/men/85.jpg" alt="Student testimonial"
+                                class="testimonial-avatar rounded-circle mb-3 mx-auto" style="border: 4px solid #fff;">
                             <h5 class="mb-1 fw-bold" style="color: #ffd700;">Siddharth Kumar</h5>
                             <p class="mb-2 text-info small">Advanced English Program</p>
                             <blockquote class="blockquote mb-3">
-                                <p class="mb-0" style="color: #e0e0e0;">“The group activities and real-life practice sessions were a game changer. I now speak English confidently in public and at my job interviews!”</p>
+                                <p class="mb-0" style="color: #e0e0e0;">“The group activities and real-life practice
+                                    sessions were a game changer. I now speak English confidently in public and at my
+                                    job interviews!”</p>
                             </blockquote>
                             <div class="testimonial-rating mt-2">
                                 <i class="bi bi-star-fill text-warning"></i>
@@ -440,12 +477,15 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="testimonial-card card h-100 text-center p-4 border-0 shadow-lg testimonial-hover" style="background: #23395d; color: #fff;">
-                            <img src="https://randomuser.me/api/portraits/men/41.jpg" alt="Student testimonial" class="testimonial-avatar rounded-circle mb-3 mx-auto" style="border: 4px solid #fff;">
+                        <div class="testimonial-card card h-100 text-center p-4 border-0 shadow-lg testimonial-hover"
+                            style="background: #23395d; color: #fff;">
+                            <img src="https://randomuser.me/api/portraits/men/41.jpg" alt="Student testimonial"
+                                class="testimonial-avatar rounded-circle mb-3 mx-auto" style="border: 4px solid #fff;">
                             <h5 class="mb-1 fw-bold" style="color: #ffd700;">Arjun Tripathi</h5>
                             <p class="mb-2 text-info small">Online English</p>
                             <blockquote class="blockquote mb-3">
-                                <p class="mb-0" style="color: #e0e0e0;">“CIEFAL’s online classes fit perfectly with my work schedule. The teachers are always available to help!”</p>
+                                <p class="mb-0" style="color: #e0e0e0;">“CIEFAL’s online classes fit perfectly with my
+                                    work schedule. The teachers are always available to help!”</p>
                             </blockquote>
                             <div class="testimonial-rating mt-2">
                                 <i class="bi bi-star-fill text-warning"></i>
@@ -457,12 +497,15 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="testimonial-card card h-100 text-center p-4 border-0 shadow-lg testimonial-hover" style="background: #23395d; color: #fff;">
-                            <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="Student testimonial" class="testimonial-avatar rounded-circle mb-3 mx-auto" style="border: 4px solid #fff;">
+                        <div class="testimonial-card card h-100 text-center p-4 border-0 shadow-lg testimonial-hover"
+                            style="background: #23395d; color: #fff;">
+                            <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="Student testimonial"
+                                class="testimonial-avatar rounded-circle mb-3 mx-auto" style="border: 4px solid #fff;">
                             <h5 class="mb-1 fw-bold" style="color: #ffd700;">Meera Patel</h5>
                             <p class="mb-2 text-info small">General English Course</p>
                             <blockquote class="blockquote mb-3">
-                                <p class="mb-0" style="color: #e0e0e0;">“I made friends from all over the world and improved my English faster than I expected. Highly recommend CIEFAL!”</p>
+                                <p class="mb-0" style="color: #e0e0e0;">“I made friends from all over the world and
+                                    improved my English faster than I expected. Highly recommend CIEFAL!”</p>
                             </blockquote>
                             <div class="testimonial-rating mt-2">
                                 <i class="bi bi-star-fill text-warning"></i>
@@ -478,15 +521,75 @@
         </section>
     </main>
 
-<%- include('partials/footer') %>
+    <%- include('partials/footer') %>
 
-<script>
-    
-function toggleCourseDetails(btn) {
-  const dropdown = btn.nextElementSibling;
-  dropdown.classList.toggle('open');
-  btn.querySelector('i').classList.toggle('bi-chevron-down');
-  btn.querySelector('i').classList.toggle('bi-chevron-up');
-}
+    <style>
+    /* PW.live inspired carousel custom styles */
+    .carousel-section {
+        margin-bottom: 0;
+        padding: 0;
+    }
+    .carousel-img-wrapper {
+        position: relative;
+        width: 100%;
+        height: 38vw;
+        min-height: 320px;
+        max-height: 520px;
+        overflow: hidden;
+    }
+    .carousel-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+        transition: transform 0.5s cubic-bezier(.4,0,.2,1);
+    }
+    .carousel-item.active .carousel-img {
+        transform: scale(1.03);
+    }
+    /* Removed overlay and caption styles as requested */
+    .carousel-indicators [data-bs-target] {
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background: #fff;
+        opacity: 0.7;
+        border: 2px solid #1e3c72;
+        margin: 0 6px;
+        transition: background 0.3s, opacity 0.3s;
+    }
+    .carousel-indicators .active {
+        background: #1e3c72;
+        opacity: 1;
+    }
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+        filter: drop-shadow(0 2px 8px #222);
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    @media (max-width: 768px) {
+        .carousel-img-wrapper {
+            height: 48vw;
+            min-height: 180px;
+            max-height: 320px;
+        }
+        .carousel-caption-centered h2 {
+            font-size: 1.2rem;
+        }
+        .carousel-caption-centered p {
+            font-size: 0.95rem;
+        }
+    }
+    </style>
 
-</script>
+        <script>
+
+            function toggleCourseDetails(btn) {
+                const dropdown = btn.nextElementSibling;
+                dropdown.classList.toggle('open');
+                btn.querySelector('i').classList.toggle('bi-chevron-down');
+                btn.querySelector('i').classList.toggle('bi-chevron-up');
+            }
+
+        </script>
