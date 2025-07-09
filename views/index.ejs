@@ -3,7 +3,7 @@
     <main class="main-content">
 
         <!-- Carousel Section (PW.live inspired) -->
-        <section class="carousel-section mb-0" style="padding:0;">
+        <section class="carousel-section mb-0">
             <div id="mainCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3500">
                 <!-- Indicators -->
                 <div class="carousel-indicators">
@@ -183,207 +183,63 @@
         <!-- Top Courses Section -->
         <section class="top-courses-section py-5">
             <div class="container">
-                <h2 class="text-center mb-5 fw-bold display-5 top-courses-title">Trending Courses</h2>
-                <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
-                    <!-- Course 1 -->
-                    <div class="col">
-                        <div class="card h-100 shadow-lg border-0 course-card position-relative overflow-hidden">
-                            <div class="course-header position-relative spoken-english-bg">
-                                <h4 class="course-title">Spoken English</h4>
-                            </div>
-                            <div class="card-body course-card-body">
-                                <p class="card-text course-desc">Boost your confidence and fluency in everyday English
-                                    conversations for work, travel, and social life.</p>
-                                <div class="course-details-horizontal">
-                                    <div class="course-detail-horizontal-col">
-                                        <span class="course-detail-horizontal-icon"><i
-                                                class="bi bi-list-task"></i></span>
-                                        <span class="course-detail-horizontal-content">
-                                            <span class="course-detail-horizontal-label">Contents</span>
-                                            <span class="course-detail-horizontal-value">Conversation, Pronunciation,
-                                                Listening, Fluency, Vocabulary...more</span>
-                                        </span>
-                                    </div>
-                                    <div class="course-detail-horizontal-col">
-                                        <span class="course-detail-horizontal-icon"><i
-                                                class="bi bi-clock-history"></i></span>
-                                        <span class="course-detail-horizontal-content">
-                                            <span class="course-detail-horizontal-label">Duration</span>
-                                            <span class="course-detail-horizontal-value">3 months</span>
-                                        </span>
-                                    </div>
-                                    <div class="course-detail-horizontal-col">
-                                        <span class="course-detail-horizontal-icon"><i class="bi bi-flag"></i></span>
-                                        <span class="course-detail-horizontal-content">
-                                            <span class="course-detail-horizontal-label">Pre-req</span>
-                                            <span class="course-detail-horizontal-value">Basic English</span>
-                                        </span>
+                <h2 class="text-center mb-5 fw-bold display-5 top-courses-title">Featured English Courses</h2>
+                <div class="modern-courses-grid">
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center">
+                        <!-- Spoken English (Basic) -->
+                        <div class="col">
+                            <div class="course-card modern-course-card h-100 d-flex flex-column align-items-center p-0">
+                                <div class="modern-card-header d-flex align-items-center justify-content-center">
+                                    <div class="modern-card-icon spoken-basic"><i class="bi bi-translate"></i></div>
+                                </div>
+                                <div class="modern-card-body flex-grow-1 d-flex flex-column align-items-center p-4">
+                                    <h3 class="course-name">SPOKEN ENGLISH (BASIC)</h3>
+                                    <p class="course-desc">Gain confidence in everyday English. Learn grammar, vocabulary, and conversation skills for daily life, travel, and work. Ideal for those who know the basics but want to improve fluency.<br><br>
+                                    <b>What you'll get:</b> Full-length speaking and listening practice, section-wise strategies, personal feedback, and progress tracking. Ideal for learners aiming to improve fluency and communication for real-life situations.</p>
+                                    <div class="course-meta-box d-flex flex-row gap-3 justify-content-center mt-auto">
+                                        <span class="course-duration"><i class="bi bi-clock-history"></i> 6 Months</span>
+                                        <span class="course-fee"><i class="bi bi-currency-rupee"></i> 1150/M</span>
                                     </div>
                                 </div>
-                                <a href="/courses#spoken-english" class="btn btn-gradient w-100 fw-bold shadow-sm">View
-                                    Course</a>
+                            </div>
+                        </div>
+                        <!-- IELTS/TOEFL -->
+                        <div class="col">
+                            <div class="course-card modern-course-card h-100 d-flex flex-column align-items-center p-0">
+                                <div class="modern-card-header d-flex align-items-center justify-content-center">
+                                    <div class="modern-card-icon ielts-toefl"><i class="bi bi-globe2"></i></div>
+                                </div>
+                                <div class="modern-card-body flex-grow-1 d-flex flex-column align-items-center p-4">
+                                    <h3 class="course-name">IELTS/TOEFL</h3>
+                                    <p class="course-desc">Prepare for international English exams with expert guidance. Practice all modules—reading, writing, listening, and speaking—to achieve your target band/score.<br><br>
+                                    <b>What you'll get:</b> Full-length mock tests, section-wise strategies, writing and speaking evaluations, personal feedback, and progress tracking. Ideal for students and professionals aiming to study or work abroad.</p>
+                                    <div class="course-meta-box d-flex flex-row gap-3 justify-content-center mt-auto">
+                                        <span class="course-duration"><i class="bi bi-clock-history"></i> 2 Months</span>
+                                        <span class="course-fee"><i class="bi bi-currency-rupee"></i> 2100/M</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- TESOL -->
+                        <div class="col">
+                            <div class="course-card modern-course-card h-100 d-flex flex-column align-items-center p-0">
+                                <div class="modern-card-header d-flex align-items-center justify-content-center">
+                                    <div class="modern-card-icon tesol"><i class="bi bi-mortarboard"></i></div>
+                                </div>
+                                <div class="modern-card-body flex-grow-1 d-flex flex-column align-items-center p-4">
+                                    <h3 class="course-name">TESOL</h3>
+                                    <p class="course-desc">Become a certified English teacher. Learn modern teaching methods, classroom management, and curriculum design. Beneficial for aspiring teachers and educators.<br><br>
+                                    <b>What you'll get:</b> Internationally recognized certification, hands-on teaching practice, lesson planning workshops, personal feedback, and career guidance for future educators.</p>
+                                    <div class="course-meta-box d-flex flex-row gap-3 justify-content-center mt-auto">
+                                        <span class="course-duration"><i class="bi bi-clock-history"></i> 6 Months</span>
+                                        <span class="course-fee"><i class="bi bi-currency-rupee"></i> 5000/M</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Course 2 -->
-                    <div class="col">
-                        <div class="card h-100 shadow-lg border-0 course-card position-relative overflow-hidden">
-                            <div class="course-header position-relative ielts-bg">
-                                <h4 class="course-title">IELTS Preparation</h4>
-                            </div>
-                            <div class="card-body course-card-body">
-                                <p class="card-text course-desc">Achieve your target band in IELTS with expert guidance,
-                                    practice tests, and personalized feedback.</p>
-                                <div class="course-details-horizontal">
-                                    <div class="course-detail-horizontal-col">
-                                        <span class="course-detail-horizontal-icon"><i
-                                                class="bi bi-list-task"></i></span>
-                                        <span class="course-detail-horizontal-content">
-                                            <span class="course-detail-horizontal-label">Contents</span>
-                                            <span class="course-detail-horizontal-value">Reading, Writing, Speaking,
-                                                Listening, Practice Tests...more</span>
-                                        </span>
-                                    </div>
-                                    <div class="course-detail-horizontal-col">
-                                        <span class="course-detail-horizontal-icon"><i
-                                                class="bi bi-clock-history"></i></span>
-                                        <span class="course-detail-horizontal-content">
-                                            <span class="course-detail-horizontal-label">Duration</span>
-                                            <span class="course-detail-horizontal-value">2-4 months</span>
-                                        </span>
-                                    </div>
-                                    <div class="course-detail-horizontal-col">
-                                        <span class="course-detail-horizontal-icon"><i class="bi bi-flag"></i></span>
-                                        <span class="course-detail-horizontal-content">
-                                            <span class="course-detail-horizontal-label">Pre-req</span>
-                                            <span class="course-detail-horizontal-value">Intermediate English</span>
-                                        </span>
-                                    </div>
-                                </div>
-                                <a href="/courses#ielts" class="btn btn-gradient w-100 fw-bold shadow-sm">View
-                                    Course</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Course 3 -->
-                    <div class="col">
-                        <div class="card h-100 shadow-lg border-0 course-card position-relative overflow-hidden">
-                            <div class="course-header position-relative business-english-bg">
-                                <h4 class="course-title">Business English</h4>
-                            </div>
-                            <div class="card-body course-card-body">
-                                <p class="card-text course-desc">Master professional English for meetings, emails,
-                                    presentations, and workplace communication.</p>
-                                <div class="course-details-horizontal">
-                                    <div class="course-detail-horizontal-col">
-                                        <span class="course-detail-horizontal-icon"><i
-                                                class="bi bi-list-task"></i></span>
-                                        <span class="course-detail-horizontal-content">
-                                            <span class="course-detail-horizontal-label">Contents</span>
-                                            <span class="course-detail-horizontal-value">Vocabulary, Email, Meetings,
-                                                Presentations, Reports...more</span>
-                                        </span>
-                                    </div>
-                                    <div class="course-detail-horizontal-col">
-                                        <span class="course-detail-horizontal-icon"><i
-                                                class="bi bi-clock-history"></i></span>
-                                        <span class="course-detail-horizontal-content">
-                                            <span class="course-detail-horizontal-label">Duration</span>
-                                            <span class="course-detail-horizontal-value">3 months</span>
-                                        </span>
-                                    </div>
-                                    <div class="course-detail-horizontal-col">
-                                        <span class="course-detail-horizontal-icon"><i class="bi bi-flag"></i></span>
-                                        <span class="course-detail-horizontal-content">
-                                            <span class="course-detail-horizontal-label">Pre-req</span>
-                                            <span class="course-detail-horizontal-value">Intermediate English</span>
-                                        </span>
-                                    </div>
-                                </div>
-                                <a href="/courses#business-english"
-                                    class="btn btn-gradient w-100 fw-bold shadow-sm">View Course</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Course 4 -->
-                    <div class="col">
-                        <div class="card h-100 shadow-lg border-0 course-card position-relative overflow-hidden">
-                            <div class="course-header position-relative advanced-english-bg">
-                                <h4 class="course-title">Advanced English Program</h4>
-                            </div>
-                            <div class="card-body course-card-body">
-                                <p class="card-text course-desc">Sharpen your advanced grammar, vocabulary, and
-                                    communication for academic and professional excellence.</p>
-                                <div class="course-details-horizontal">
-                                    <div class="course-detail-horizontal-col">
-                                        <span class="course-detail-horizontal-icon"><i
-                                                class="bi bi-list-task"></i></span>
-                                        <span class="course-detail-horizontal-content">
-                                            <span class="course-detail-horizontal-label">Contents</span>
-                                            <span class="course-detail-horizontal-value">Grammar, Essays, Debates,
-                                                Advanced Vocabulary, Academic Writing...more</span>
-                                        </span>
-                                    </div>
-                                    <div class="course-detail-horizontal-col">
-                                        <span class="course-detail-horizontal-icon"><i
-                                                class="bi bi-clock-history"></i></span>
-                                        <span class="course-detail-horizontal-content">
-                                            <span class="course-detail-horizontal-label">Duration</span>
-                                            <span class="course-detail-horizontal-value">4 months</span>
-                                        </span>
-                                    </div>
-                                    <div class="course-detail-horizontal-col">
-                                        <span class="course-detail-horizontal-icon"><i class="bi bi-flag"></i></span>
-                                        <span class="course-detail-horizontal-content">
-                                            <span class="course-detail-horizontal-label">Pre-req</span>
-                                            <span class="course-detail-horizontal-value">Upper-intermediate</span>
-                                        </span>
-                                    </div>
-                                </div>
-                                <a href="/courses#advanced-english"
-                                    class="btn btn-gradient w-100 fw-bold shadow-sm">View Course</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Course 5 -->
-                    <div class="col">
-                        <div class="card h-100 shadow-lg border-0 course-card position-relative overflow-hidden">
-                            <div class="course-header position-relative general-english-bg">
-                                <h4 class="course-title">General English Course</h4>
-                            </div>
-                            <div class="card-body course-card-body">
-                                <p class="card-text course-desc">Build a strong foundation in English for everyday use,
-                                    academics, and personal growth.</p>
-                                <div class="course-details-horizontal">
-                                    <div class="course-detail-horizontal-col">
-                                        <span class="course-detail-horizontal-icon"><i
-                                                class="bi bi-list-task"></i></span>
-                                        <span class="course-detail-horizontal-content">
-                                            <span class="course-detail-horizontal-label">Contents</span>
-                                            <span class="course-detail-horizontal-value">Grammar, Reading, Speaking,
-                                                Listening, Writing...more</span>
-                                        </span>
-                                    </div>
-                                    <div class="course-detail-horizontal-col">
-                                        <span class="course-detail-horizontal-icon"><i
-                                                class="bi bi-clock-history"></i></span>
-                                        <span class="course-detail-horizontal-content">
-                                            <span class="course-detail-horizontal-label">Duration</span>
-                                            <span class="course-detail-horizontal-value">3 months</span>
-                                        </span>
-                                    </div>
-                                    <div class="course-detail-horizontal-col">
-                                        <span class="course-detail-horizontal-icon"><i class="bi bi-flag"></i></span>
-                                        <span class="course-detail-horizontal-content">
-                                            <span class="course-detail-horizontal-label">Pre-req</span>
-                                            <span class="course-detail-horizontal-value">None</span>
-                                        </span>
-                                    </div>
-                                </div>
-                                <a href="/courses#general-english" class="btn btn-gradient w-100 fw-bold shadow-sm">View
-                                    Course</a>
-                            </div>
-                        </div>
+                    <div class="d-flex justify-content-center mt-4">
+                        <a href="/courses" class="btn btn-lg btn-gradient px-5 py-3 fw-bold shadow-lg" style="font-size:1.35rem;">Checkout Courses</a>
                     </div>
                 </div>
             </div>

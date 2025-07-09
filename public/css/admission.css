@@ -1,6 +1,6 @@
 body {
   background-color: #f8f9fa;
-}
+
 
 .admission-section {
   min-height: 100vh;
@@ -13,12 +13,17 @@ body {
   position: relative;
 }
 
+
 /* Set a reasonable default height for the message textarea, but allow it to grow */
 .admission-section textarea#message {
   min-height: 110px;
   max-height: 350px;
   resize: vertical;
 }
+
+/* =============================
+   Admission Page Styles (admission.ejs)
+   ============================= */
 
 @media (max-width: 575.98px) {
   .admission-section {
@@ -39,6 +44,8 @@ body {
 }
 }
 
+
+/* Utility: Full height container for admission page */
 .container.h-100 {
   height: 100vh;
   display: flex;
@@ -46,10 +53,14 @@ body {
   justify-content: center;
 }
 
+
+/* Utility: Minimum viewport height */
 .min-vh-100 {
   min-height: 100vh !important;
 }
 
+
+/* Card styles for admission form */
 .card {
   border-radius: 1.5rem;
   border: none;
@@ -57,15 +68,18 @@ body {
   margin: 0 auto;
 }
 
+
 .card-header {
   border-radius: 1.5rem 1.5rem 0 0;
   background: linear-gradient(90deg, #0d6efd 60%, #3b82f6 100%);
 }
 
+
 .form-label {
   color: #0d6efd;
   letter-spacing: 0.5px;
 }
+
 
 .form-control,
 .form-select {
@@ -75,11 +89,13 @@ body {
   transition: border-color 0.2s, box-shadow 0.2s;
 }
 
+
 .form-control:focus,
 .form-select:focus {
   box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
   border-color: #0d6efd;
 }
+
 
 .btn-primary {
   background: linear-gradient(90deg, #0d6efd 60%, #3b82f6 100%);
@@ -90,12 +106,15 @@ body {
   transition: background 0.2s, box-shadow 0.2s;
 }
 
+
 .btn-primary:hover,
 .btn-primary:focus {
   background: linear-gradient(90deg, #2563eb 60%, #0d6efd 100%);
   box-shadow: 0 4px 16px 0 rgba(13, 110, 253, 0.1);
 }
 
+
+/* Responsive Tweaks for Admission Page */
 @media (max-width: 991.98px) {
   .card {
     max-width: 95vw;
@@ -104,6 +123,7 @@ body {
     padding: 2rem !important;
   }
 }
+
 
 @media (max-width: 575.98px) {
   .card-body {

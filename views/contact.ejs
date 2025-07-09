@@ -1,8 +1,7 @@
 <%- include('partials/header') %>
 
 
-  <main class="main-content py-5"
-    style="background: linear-gradient(120deg, #e0e7ff 0%, #b3c6f7 100%); min-height: 80vh;">
+  <main class="contact-main-content">
     <div class="container">
       <div class="row justify-content-center mb-5">
         <div class="col-lg-8 text-center">
@@ -14,22 +13,22 @@
       <div class="row g-5">
         <!-- Contact Info Only, no box -->
         <div class="col-12">
-          <div class="contact-info-box w-100 px-3 px-md-5 py-4 mb-4" style="background: #f5f7ff;">
-            <h4 class="fw-semibold mb-3 text-primary" style="font-size:2rem;">Contact Information</h4>
-            <p class="mb-3" style="font-size:1.25rem;"><i class="bi bi-geo-alt text-primary me-2"></i>
+          <div class="contact-info-box w-100 px-3 px-md-5 py-4 mb-4">
+            <h4 class="fw-semibold mb-3 text-primary contact-info-title">Contact Information</h4>
+            <p class="mb-3 contact-info-p"><i class="bi bi-geo-alt text-primary me-2"></i>
               <strong>Address:</strong><br>Chouna Gara, Domohona, Chaunagara, West Bengal 732015
             </p>
-            <p class="mb-3" style="font-size:1.25rem;"><i class="bi bi-telephone text-primary me-2"></i>
+            <p class="mb-3 contact-info-p"><i class="bi bi-telephone text-primary me-2"></i>
               <strong>Phone:</strong><br> +91-8016942297, +91-8178121690
             </p>
-            <p class="mb-3" style="font-size:1.25rem;"><i class="bi bi-envelope text-primary me-2"></i>
+            <p class="mb-3 contact-info-p"><i class="bi bi-envelope text-primary me-2"></i>
               <strong>Email:</strong><br>ainulhaque923@gmail.com
             </p>
             <hr>
-            <h6 class="fw-bold mb-2" style="font-size:1.15rem;">Office Hours</h6>
-            <p class="mb-3" style="font-size:1.15rem;">Mon - Sat: 7:00 AM – 8:00 PM<br>Sunday: Closed</p>
+            <h6 class="fw-bold mb-2 contact-info-hours">Office Hours</h6>
+            <p class="mb-3 contact-info-hours">Mon - Sat: 7:00 AM – 8:00 PM<br>Sunday: Closed</p>
             <hr>
-            <h6 class="fw-bold mb-2" style="font-size:1.15rem;">Follow Us</h6>
+            <h6 class="fw-bold mb-2 contact-info-hours">Follow Us</h6>
             <div class="d-flex gap-3 mb-2">
               <a href="#" class="text-primary fs-3" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
               <a href="#" class="text-primary fs-3" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
@@ -42,10 +41,8 @@
       <!-- Google Maps Section with text and map side by side -->
       <div class="row mt-5">
         <div class="col-12">
-          <div class="contact-map-section d-flex flex-column flex-md-row align-items-stretch overflow-hidden"
-            style="background: linear-gradient(90deg, #e0e7ff 60%, #b3c6f7 100%); min-height: 320px; border-radius:0;">
-            <div class="contact-map-text d-flex flex-column justify-content-center p-4 p-md-5"
-              style="flex: 1 1 0; min-width: 0;">
+          <div class="contact-map-section d-flex flex-column flex-md-row align-items-stretch overflow-hidden">
+            <div class="contact-map-text d-flex flex-column justify-content-center p-4 p-md-5">
               <h4 class="fw-bold text-primary mb-3">Visit Our Centre</h4>
               <p class="mb-3 fs-5 text-secondary">We welcome you to visit our centre for a personal consultation, course
                 details, or a campus tour. Our team is always ready to assist you with your queries and guide you to the
@@ -57,60 +54,18 @@
                 <li><i class="bi bi-envelope text-primary me-2"></i> ainulhaque923@gmail.com</li>
               </ul>
             </div>
-            <div class="contact-map-embed" style="flex: 3 1 0; min-width: 0;">
-              <div class="ratio ratio-16x9 h-100" style="min-height: 320px;">
+            <div class="contact-map-embed">
+              <div class="ratio ratio-16x9 h-100 contact-map-ratio">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3590.517916644662!2d87.9286477!3d25.8524262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e539e05fb835ef%3A0xd2ad552ddb9e5c66!2sCambridge%20Institute%20of%20English%20For%20Advanced%20Learning%20-%20CIEFAL!5e0!3m2!1sen!2sin!4v1751962400488!5m2!1sen!2sin"
-                  width="100%" height="100%" style="border:0; min-height:320px; border-radius: 0 1rem 1rem 0;"
+                  width="100%" height="100%" class="contact-map-iframe"
                   allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <style>
-        .contact-info-box {
-          background: #f5f7ff;
-          border-radius: 0;
-          font-size: 1.2rem;
-        }
-
-        .contact-map-section {
-          min-height: 320px;
-          margin-bottom: 2rem;
-          border-radius: 0;
-        }
-
-        .contact-map-text {
-          flex-basis: 25%;
-          max-width: 25%;
-          background: transparent;
-        }
-
-        .contact-map-embed {
-          flex-basis: 75%;
-          max-width: 75%;
-          background: transparent;
-          display: flex;
-          align-items: stretch;
-        }
-
-        @media (max-width: 991.98px) {
-          .contact-map-section {
-            flex-direction: column !important;
-          }
-
-          .contact-map-text,
-          .contact-map-embed {
-            max-width: 100%;
-            flex-basis: 100%;
-          }
-
-          .contact-map-embed .ratio {
-            min-height: 240px;
-          }
-        }
-      </style>
+      <!-- All styles moved to public/css/contact.css -->
     </div>
   </main>
 

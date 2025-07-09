@@ -1,5 +1,307 @@
-/* about.css - Dedicated styles for About page (CIEFAL)
-   Uses different shades of blue for all major elements */
+
+
+/* Director Section Styles */
+.about-director-photo {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #2563eb;
+}
+.about-director-post {
+    font-size: 1.1rem;
+}
+.about-director-message-text {
+    font-size: 1.35rem;
+    line-height: 1.8;
+}
+.about-director-signature {
+    color: #2563eb;
+    font-size: 1.25rem;
+}
+.about-director-signature-post {
+    font-size: 1.1rem;
+}
+.about-missionvision-bold {
+    font-weight: 500;
+}
+/* Mission & Vision Split Section */
+.about-mission-vision-section {
+    background: #f8fafc;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.about-missionvision-box {
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 8px 32px 0 rgba(37,99,235,0.18), 0 2px 8px 0 rgba(37,99,235,0.10);
+    border: 1.5px solid #e0e7ef;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: box-shadow 0.3s cubic-bezier(.4,2,.6,1), transform 0.3s cubic-bezier(.4,2,.6,1);
+}
+.about-missionvision-box:hover {
+    box-shadow: 0 16px 48px 0 rgba(37,99,235,0.28), 0 4px 16px 0 rgba(37,99,235,0.15);
+    transform: translateY(-6px) scale(1.025);
+    z-index: 2;
+}
+.about-mission-title, .about-vision-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2563eb;
+    letter-spacing: 1px;
+}
+.about-mission-content, .about-vision-content {
+    font-size: 1.15rem;
+    line-height: 2;
+    color: #22223b;
+}
+.about-mission-content p, .about-vision-content p {
+    margin-bottom: 1.2rem;
+}
+.about-mission-content p:last-child, .about-vision-content p:last-child {
+    margin-bottom: 0;
+}
+/* Mission and Vision Section Styles */
+.about-mission-section, .about-vision-section {
+    background: #f8fafc;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.about-mission-title, .about-vision-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #2563eb;
+    letter-spacing: 1px;
+}
+.about-mission-content, .about-vision-content {
+    max-width: 700px;
+    font-size: 1.18rem;
+    line-height: 2;
+    color: #22223b;
+    margin: 0 auto;
+}
+.about-mission-content p, .about-vision-content p {
+    margin-bottom: 1.3rem;
+}
+.about-mission-content p:last-child, .about-vision-content p:last-child {
+    margin-bottom: 0;
+}
+/* Director Message Paper Style */
+.director-message-paper {
+    background: #fff;
+    border-radius: 1.1rem;
+    box-shadow: 0 4px 24px 0 rgba(37,99,235,0.09), 0 1.5px 0 0 #e0e7ef;
+    border: 1.5px solid #e0e7ef;
+    padding: 2.5rem 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 1;
+}
+.director-message-paper:before {
+    content: "";
+    position: absolute;
+    top: 0.7rem;
+    left: 0.7rem;
+    right: 0.7rem;
+    bottom: 0.7rem;
+    border-radius: 1rem;
+    border: 1px dashed #b6c3d1;
+    pointer-events: none;
+    z-index: -1;
+}
+/* About Story Section Styles */
+.about-story-section {
+    background: #f8fafc;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.about-story-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2563eb;
+    letter-spacing: 1px;
+}
+.about-story-content {
+    max-width: 800px;
+    font-size: 1.25rem;
+    line-height: 2;
+    color: #22223b;
+    background: none;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+}
+.about-story-content p {
+    margin-bottom: 1.5rem;
+}
+.about-story-content p:last-child {
+    margin-bottom: 0;
+}
+.director-message-box-modern {
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 32px rgba(79, 140, 255, 0.13);
+  padding: 2.5rem 2.2rem;
+  margin-bottom: 1.5rem;
+  width: 90vw;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 2;
+}
+/* Box styling for the director's message */
+.director-message-box-modern {
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 32px rgba(79, 140, 255, 0.10);
+  padding: 2.5rem 2.2rem;
+  margin-bottom: 1.5rem;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+/* Make the director info box wider */
+.about-director-info-box {
+  max-width: 600px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Big Director Photo for Modern Section */
+.director-big-photo {
+  width: 180px !important;
+  height: 180px !important;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 7px solid #e0e7ff;
+  box-shadow: 0 8px 32px rgba(79, 140, 255, 0.13);
+  margin-bottom: 1rem;
+}
+
+/* Style for the director's message text when not in a box */
+.director-message-text {
+  font-size: 1.13rem;
+  line-height: 1.8;
+  color: #1a237e;
+  text-align: justify;
+  margin-bottom: 0;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+/* Modern Director Message Section */
+.director-message-modern {
+  background: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 32px rgba(79, 140, 255, 0.13);
+  padding: 2.5rem 2.2rem;
+  margin-bottom: 2.5rem;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  gap: 2.5rem;
+}
+.director-photo img {
+  border: 5px solid #e0e7ff;
+  box-shadow: 0 4px 24px rgba(79, 140, 255, 0.13);
+}
+.director-message-box-modern {
+  background: none;
+  padding: 0;
+}
+.director-signature-modern {
+  margin-top: 2.2rem;
+  text-align: right;
+  font-size: 1.08rem;
+  color: #2563eb;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+.director-signature-modern .fw-bold {
+  color: #2563eb;
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+.director-signature-modern .text-secondary {
+  color: #374151 !important;
+  font-size: 1rem;
+  font-weight: 400;
+}
+@media (max-width: 991.98px) {
+  .director-message-modern {
+    flex-direction: column !important;
+    padding: 1.2rem 0.7rem;
+    gap: 1.2rem;
+  }
+  .director-big-photo {
+    width: 110px !important;
+    height: 110px !important;
+  }
+  .director-message-box-modern {
+    width: 96vw;
+    min-width: 0;
+  }
+}
+/* Enhanced Message from the Director Section */
+.about-director-section {
+  background: linear-gradient(120deg, #e0e7ff 0%, #b3c6f7 100%);
+  padding: 3rem 0;
+}
+.director-message-box {
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 32px rgba(79, 140, 255, 0.10);
+  padding: 2.5rem 2.2rem 2.5rem 2.2rem;
+  margin-bottom: 1.5rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.director-message-box p {
+  font-size: 1.13rem;
+  line-height: 1.8;
+  color: #1a237e;
+  margin-bottom: 0;
+  text-align: justify;
+}
+.director-signature {
+  margin-top: 2.2rem;
+  text-align: right;
+  font-size: 1.08rem;
+  color: #2563eb;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+.director-signature span {
+  display: block;
+  color: #1a237e;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+.director-signature small {
+  color: #374151;
+  font-size: 1rem;
+  font-weight: 400;
+}
+@media (max-width: 767.98px) {
+  .director-message-box {
+    padding: 1.2rem 0.7rem 1.2rem 0.7rem;
+  }
+  .director-signature {
+    font-size: 1rem;
+  }
+}
+
+/* =============================
+   About Page Styles (about.ejs)
+   ============================= */
+
 
 .about-director-section {
   background: linear-gradient(120deg, #e0e7ff 0%, #b3c6f7 100%);
@@ -9,9 +311,8 @@
 .about-director-section p.text-primary {
   color: #1a237e !important;
 }
-.about-director-section h3 {
-  color: #2563eb !important;
-}
+
+
 
 .about-story-section {
   background: linear-gradient(120deg, #e3f0ff 0%, #c6e2ff 100%);
@@ -20,9 +321,7 @@
   color: #2563eb !important;
   text-shadow: 0 2px 12px rgba(79, 140, 255, 0.08);
 }
-.about-story-section p {
-  color: #1a237e;
-}
+
 
 .about-mission-section {
   background: linear-gradient(120deg, #e0e7ff 0%, #b3c6f7 100%);
@@ -37,9 +336,8 @@
   transform: translateY(-6px) scale(1.03);
   border-color: #2563eb;
 }
-.about-mission-section h3 {
-  color: #2563eb !important;
-}
+
+
 
 .about-why-section {
   background: linear-gradient(120deg, #c6e2ff 0%, #e0e7ff 100%);
@@ -64,6 +362,8 @@
   color: #4682ea !important;
 }
 
+
+/* Responsive Tweaks for About Page */
 @media (max-width: 767.98px) {
   .about-story-section h2 {
     font-size: 2.1rem;

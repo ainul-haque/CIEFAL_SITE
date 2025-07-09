@@ -1,3 +1,6 @@
+/* =============================
+   Thank You Page Styles (thankyou.ejs)
+   ============================= */
 
 body, html {
   height: 100%;
@@ -12,9 +15,7 @@ body {
   padding: 0;
 }
 
-header {
-  /* If you want a fixed height header, set it here, or let content decide */
-}
+
 
 
 main.thankyou-viewport {
@@ -32,9 +33,7 @@ footer {
   --footer-height: 0px;
 }
 
-footer {
-  /* Footer will be pushed below the viewport if content is short */
-}
+
 
 .thankyou-card {
   background: #fff;

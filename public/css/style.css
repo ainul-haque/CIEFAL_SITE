@@ -45,10 +45,12 @@ footer {
 }
 
 /* More compact carousel height for all screens */
+.carousel-section {
+  padding: 0;
+}
 .carousel-inner {
   max-height: 220px;
 }
-
 .carousel-item img {
   max-height: 220px;
   width: 100%;
